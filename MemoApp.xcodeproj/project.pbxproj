@@ -11,6 +11,7 @@
 		0B08CBA8285C5D700070BC4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08CBA7285C5D700070BC4E /* ContentView.swift */; };
 		0B08CBAA285C5D720070BC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B08CBA9285C5D720070BC4E /* Assets.xcassets */; };
 		0B08CBAD285C5D720070BC4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B08CBAC285C5D720070BC4E /* Preview Assets.xcassets */; };
+		0B89EBF0285C74980086E133 /* WriteMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89EBEF285C74980086E133 /* WriteMemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		0B08CBA7285C5D700070BC4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0B08CBA9285C5D720070BC4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B08CBAC285C5D720070BC4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0B89EBEF285C74980086E133 /* WriteMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteMemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				0B08CBA5285C5D700070BC4E /* MemoAppApp.swift */,
 				0B08CBA7285C5D700070BC4E /* ContentView.swift */,
+				0B89EBEF285C74980086E133 /* WriteMemoView.swift */,
 				0B08CBA9285C5D720070BC4E /* Assets.xcassets */,
 				0B08CBAB285C5D720070BC4E /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B89EBF0285C74980086E133 /* WriteMemoView.swift in Sources */,
 				0B08CBA8285C5D700070BC4E /* ContentView.swift in Sources */,
 				0B08CBA6285C5D700070BC4E /* MemoAppApp.swift in Sources */,
 			);

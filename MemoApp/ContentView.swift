@@ -11,25 +11,29 @@ struct ContentView: View {
     @State private var searchText = ""
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("Memo")
-                    .font(.system(size: 40, weight: .bold, design: .rounded))
-                
-                Spacer()
-                
-                Button {
-                    print("test")
-                } label: {
-                    Image(systemName: "plus.app")
-                        .font(.largeTitle)
+        NavigationView {
+            VStack {
+                HStack {
+                    Text("Memo")
+                        .font(.system(size: 40, weight: .bold, design: .rounded))
+                    
+                    Spacer()
+                    
+                    NavigationLink(destination: WriteMemoView() ) {
+                        Image(systemName: "plus.app")
+                            .font(.largeTitle)
+                    }
                 }
-            }
-            .padding()
-            
-            NavigationView {
-                Text("\(searchText)")
-                    .searchable(text: $searchText)
+                .padding()
+                
+                NavigationView {
+                    Text("\(searchText)")
+                        .searchable(text: $searchText)
+                }
+                
+                List {
+                    Text("test")
+                }
             }
         }
     }
