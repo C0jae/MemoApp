@@ -8,9 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var searchText = ""
+    
     var body: some View {
-        Text("Hello, world!")
+        VStack {
+            HStack {
+                Text("Memo")
+                    .font(.system(size: 40, weight: .bold, design: .rounded))
+                
+                Spacer()
+                
+                Button {
+                    print("test")
+                } label: {
+                    Image(systemName: "plus.app")
+                        .font(.largeTitle)
+                }
+            }
             .padding()
+            
+            NavigationView {
+                Text("\(searchText)")
+                    .searchable(text: $searchText)
+            }
+        }
     }
 }
 
